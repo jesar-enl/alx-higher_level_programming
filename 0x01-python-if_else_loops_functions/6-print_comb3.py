@@ -3,8 +3,8 @@
 for i in range(9):
     j = i + 1
     for j in range(j, 10):
-        print(f"{i}", end="")
+        print("{:d}".format(i), end="")
         if i == 8 and j == 9:
-            print(f"{j}", end="")
+            print("{:d}".format(j), end="")
         else:
-            print(f"{j}", end=", ")
+            print("{:d}".format(j), end=", ")
