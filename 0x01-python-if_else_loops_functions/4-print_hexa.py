@@ -3,4 +3,4 @@
 
 # look in the range of 0 - 99(exclusive)
 for i in range(0, 99):
-    print("{:d} = {:x}".format(i, i))
+    print("{:d} = 0x{:x}".format(i, i))
