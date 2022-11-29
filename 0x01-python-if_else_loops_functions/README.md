@@ -15,3 +15,6 @@ It also includes the use of string representation that converts the random numbe
 10. [9-print_last_digit.py](./9-print_last_digit.py) - Print the last digit of a number using a function.
 11. [10-add.py](./10-add.py) - Using a function ``add()``, to add two integers.
 12. [11-pow.py](./11-pow.py) - Using the function ``pow`` to raise a to the power of b.
+13. [12-fizzbuzz.py](./12-fizzbuzz.py) - FizzBuzz project in Python
+14. [13-insert_number.c](./13-insert_number.c) - Insert a new element in a sorted linked list.
+15. [100-print_tebalpha.py](./100-print_tebalpha.py) - Print the alphabet in reverse order, alternating the values of lowercase and uppercase.
