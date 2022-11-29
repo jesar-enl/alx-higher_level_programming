@@ -6,4 +6,4 @@ for alpha in range(ord('a'), ord('z') + 1):
     if alpha == ord('e') or alpha == ord('q'):
         continue
     else:
-        print("{:s}".format(chr(aplha)), end="")
+        print("{:s}".format(chr(alpha)), end="")
