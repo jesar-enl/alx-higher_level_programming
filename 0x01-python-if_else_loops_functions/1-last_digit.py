@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Print a random signed number 
+# Print a random signed number
 '''
 use it to check if last digit is;
 1. greater than 5: print("...and is greater than 5")
