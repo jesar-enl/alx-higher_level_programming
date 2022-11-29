@@ -10,7 +10,8 @@ use it to check if last digit is;
 import random
 number = random.randint(-10000, 10000)
 
-# use the string representation function to get the last character of the string
+# use the string representation function to get the
+# last character of the string
 # convert the last character into an integer
 value = int(repr(number)[-1])
 
