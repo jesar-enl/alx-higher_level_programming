@@ -13,12 +13,12 @@ number = random.randint(-10000, 10000)
 # use the string representation function to get the
 # last character of the string
 # convert the last character into an integer
-value = int(repr(number)[-1])
+value = abs(number)
 
 if number < 0:
-    last_digit = -1 * value
+    last_digit = -1 * (value % 10)
 else:
-    last_digit = value
+    last_digit = (value % 10)
 
 if last_digit > 5:
     message = "is greater than 5"
