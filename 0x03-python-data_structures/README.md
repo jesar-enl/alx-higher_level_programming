@@ -24,6 +24,6 @@
 
 12. [11-delete_at.py](11-delete_at.py) - Delete an item at a specific position in a list.
 
-13. [12-switch.py](./12-switch.py) - Switch the value of ``a`` and ``b``
+13. [12-switch.py](./12-switch.py) - Switch the value of ``a`` and ``b`` using the ``tuple`` method.
 
 14. [13-is_palindrome.c](13-is_palindrome.c) - C function that checks if a singly linked list is a palindrome.
