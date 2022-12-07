@@ -18,8 +18,8 @@ def value(v):
         return 1000
     return -1
 
-# function to convert to integer
 
+# function to convert to integer
 def roman_to_int(roman_string):
     if roman_string is None or type(roman_string) is not str:
         return 0
