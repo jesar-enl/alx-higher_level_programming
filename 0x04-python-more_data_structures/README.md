@@ -27,3 +27,8 @@
 12. [11-multiply_list_map.py](./11-multiply_list_map.py) - A function that returns a list with all values multiplied by a number without using any loops.
 
 13. [12-roman_to_int.py](./12-roman_to_int.py) - A function that converts a Roman numeral to an integer.
+  - Split the Roman Numeral string into Roman Symbols (character).
+  - Convert each symbol of Roman Numerals into the value it represents.
+  - Take symbol one by one from starting from index 0:
+    - If current value of symbol is greater than or equal to the value of next symbol, then add this value to the running total.
+    - else subtract this value by adding the value of next symbol to the running total.
