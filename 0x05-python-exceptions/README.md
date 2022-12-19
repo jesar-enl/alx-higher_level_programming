@@ -13,4 +13,6 @@ except Exception as err:
 ```
 
 This will result into:
-`Cannot divide by 0`
+```
+Cannot divide by 0
+```
