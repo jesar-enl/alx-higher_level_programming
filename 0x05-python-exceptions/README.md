@@ -9,10 +9,10 @@ try:
 	a, b = 12, 0
 	print(a / b)
 except Exception as err:
-	print("Can't divide by 0")
+	print("Cannot divide by 0")
 ```
 
 This will result into:
 ```python
-Can't divide by 0
+Cannot divide by 0
 ```
