@@ -13,6 +13,4 @@ except Exception as err:
 ```
 
 This will result into:
-```python
-Cannot divide by 0
-```
+`Cannot divide by 0`
