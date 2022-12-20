@@ -16,4 +16,4 @@ class Square:
         Args:
             size (int): first parameter. Defines the size of the Square
         """
-        self.size = size
+        self.__size = size
