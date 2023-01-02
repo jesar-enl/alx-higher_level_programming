@@ -123,7 +123,8 @@ class Rectangle:
             rect_2 (Rectangle): second instance
 
         Raises:
-            TypeError: if any of the parameters is not an instance of ``Rectangle``
+            TypeError: if any of the parameters is not an instance of
+                ``Rectangle``
         """
         if type(rect_1) != Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
