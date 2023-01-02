@@ -110,5 +110,6 @@ class Rectangle:
 
     def __del__(self):
         """When deleting an instance"""
-        type(self).number_of_instances -= 1 # decrease the instance by one
+        
+        type(self).number_of_instances -= 1  # decrease the instance by one
         print("Bye rectangle...")
