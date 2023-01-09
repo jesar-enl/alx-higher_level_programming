@@ -8,7 +8,7 @@ class BaseGeometry:
         """Raise an exception"""
         raise Exception("area() is not implemented")
 
-    def integer_validation(self, name, value):
+    def integer_validator(self, name, value):
         """Validate if ``value`` is an integer.
         Args:
             name (str): parameter name
