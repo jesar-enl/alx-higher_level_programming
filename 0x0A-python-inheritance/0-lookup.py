@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+"""Module having the ``lookup`` function."""
+
 
 def lookup(obj):
     """Definition.
     Args:
-        obj: parameter
+        obj (object): parameter
 
     Returns:
         dir(obj)
