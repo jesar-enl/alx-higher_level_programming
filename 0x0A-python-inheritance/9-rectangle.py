@@ -10,8 +10,8 @@ class Rectangle(base_g.BaseGeometry):
 
     def __init__(self, width, height):
         """Initialize the attributes"""
-        super().integer_validation("width", width)
-        super().integer_validation("height", height)
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
         self.__width = width
         self.__height = height
 
