@@ -2,7 +2,10 @@
 """Class ``Rectangle`` inherits the ``BaseGeometry`` class."""
 
 
-class Rectangle(__import__('7-base_geometry').BaseGeometry):
+base_g = __import__('7-base_geometry')
+
+
+class Rectangle(base_g.BaseGeometry):
     """Class Definition"""
 
     def __init__(self, width, height):
