@@ -1,0 +1,40 @@
+Importing the class
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+
+General Documenttation
+>>> print(__import__('7-base_geometry').__doc__)
+Module to modify the base_geometry class
+
+>>> print(__import__('7-base_geometry').BaseGeometry.__doc__)
+BaseGeometry class definition
+
+>>> print(__import__('7-base_geometry').BaseGeometry.integer_validation.__doc__) #doctest: +ELLIPSIS
+Validate if ``value`` is an integer.
+...
+<BLANKLINE>
+
+Code tests:
+
+Test #1:
+>>> bg.integer_validation("mack", 7)
+
+Test #2:
+>>> bg.integer_validation("mack", "john") #doctest: +ELLIPSIS
+Traceback (most recent call last):
+TypeError: ... must be an integer
+
+Test #3:
+>>> bg.integer_validation("mak", True) #doctest: +ELLIPSIS
+Traceback (most recent call last):
+TypeError: ... must be an integer
+
+Test #4:
+>>> bg.integer_validation("mak", 10.0) #doctest: +ELLIPSIS
+Traceback (most recent call last):
+TypeError: ... must be an integer
+
+Test #5:
+>>> bg.integer_validation("mak", -9) #doctest: +ELLIPSIS
+Traceback (most recent call last):
+ValueError: ... must be greater than 0
