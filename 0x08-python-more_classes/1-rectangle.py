@@ -1,24 +1,26 @@
 #!/usr/bin/python3
-"""Module containing definintion of the ``Rectangle`` class."""
+"""Module containing definition of a version of the ``Rectangle``
+class.
+"""
 
 
 class Rectangle:
-    """class definition of the ``Rectangle``"""
+    """Definition of the ``Rectangle`` class.
+    """
     def __init__(self, width=0, height=0):
-        """
+        """Called when the object is created.
         Args:
-            width (int): first parameter. the width of the rectangle
-            height (int): second parameter. the height of the rectangle.
-
+            width (int): first parameter. Defines width of rectangle.
+            height (int): second parameter. Defines height of rectangle.
         Raises:
-            TypeError: if any of the parameters is not an integer
-            ValueError: if any of the parameters is less than 0
+            TypeError: If any of the parameters is not an integer.
+            ValueError: If the value of any of the parameters is < 0.
         """
         if type(width) == int:
             if width >= 0:
                 self.__width = width
             else:
-                raise ValueError("Width must be >= 0")
+                raise ValueError("width must be >= 0")
         else:
             raise TypeError("width must be an integer")
 
@@ -32,14 +34,12 @@ class Rectangle:
 
     @property
     def width(self):
-        """``width`` property
-
+        """``width`` property.
         Args:
             value (int): sets the value of the width variable.
-
         Raises:
-            TypeError: if width is not an integer.
-            ValueError: if width is less than 0
+            TypeError: If ``value`` is not an integer.
+            ValueError: If ``value`` < 0.
         """
         return self.__width
 
@@ -55,14 +55,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """``height`` property
-
+        """``height`` property.
         Args:
             value (int): sets the value of the height variable.
-
         Raises:
-            TypeError: If ``value`` is not an integer
-            ValueError: If ``value`` is less than 0
+            TypeError: If ``value`` is not an integer.
+            ValueError: If ``value`` < 0
         """
         return self.__height
 
