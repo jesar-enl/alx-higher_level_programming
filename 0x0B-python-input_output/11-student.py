@@ -1,17 +1,21 @@
 #!/usr/bin/python3
-"""Module designed to contain the ``Student`` class"""
+"""Module containing the ``Student`` class definition.
+"""
 
 
 class Student:
-    """Class definition of Student"""
+    """``Student`` class definition.
+    """
     def __init__(self, first_name, last_name, age):
-        """Initialize the arguments"""
+        """Initializes the instance of the class.
+        """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        """Retrieve the dictionary representation of a class"""
+        """Retrieves a dictionary representation of the instance of the class.
+        """
         if attrs is None:
             return self.__dict__
         else:
@@ -23,7 +27,8 @@ class Student:
             return new_dict
 
     def reload_from_json(self, json):
-        """use json dict to set the attributes"""
+        """Uses the ``json`` dictionary to set the attributes of the instance.
+        """
         self.first_name = json['first_name']
         self.last_name = json['last_name']
         self.age = json['age']
