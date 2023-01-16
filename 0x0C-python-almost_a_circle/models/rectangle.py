@@ -94,7 +94,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """String representation"""
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return f"[Rectangle] ({self.id}) \
+                {self.x}/{self.y} - {self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
         """update the argument placement"""
@@ -136,3 +137,8 @@ class Rectangle(Base):
                         self.x = kwargs[key]
                     elif key == 'y':
                         self.y = kwargs[key]
+
+    def to_dictionary(self):
+        """Dictonary representation of the class"""
+        return {'x': self.x, 'y': self.y, 'id': self.id,
+                'height': self.height, 'width': self.width}
