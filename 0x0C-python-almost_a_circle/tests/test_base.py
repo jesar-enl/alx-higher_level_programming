@@ -18,12 +18,12 @@ class TestBaseClass(unittest.TestCase):
     def test_to_json_string(self):
         rect = Rectangle(2, 3, 0, 0, 1)
         rect_dict = rect.to_dictionary()
-        expected = '[{"x": 0, "y": 0, "id": 1, "height": 3, "width": 2}]'
+        expected = '[{"id": 1, "width": 2, "height": 3, "x": 0, "y": 0}]'
         self.assertEqual(Base.to_json_string([rect_dict]), expected)
 
         sqr = Square(2, 0, 0, 1)
         sqr_dict = sqr.to_dictionary()
-        expected = '[{"id": 1, "x": 0, "size": 2, "y": 0}]'
+        expected = '[{"id": 1, "size": 2, "x": 0, "y": 0}]'
         self.assertEqual(Base.to_json_string([sqr_dict]), expected)
 
     def test_from_json_string(self):
