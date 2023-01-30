@@ -1,24 +1,26 @@
 #!/usr/bin/python3
-"""Module containing Square class inheriting
-from the rectangle class
+"""Module containing ``Square`` class definition.
 """
-
-
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """class definition"""
+    """``Square`` class definition
+    """
     def __init__(self, size, x=0, y=0, id=None):
-        """Initialize the size of the square"""
+        """Initialize instance of ``Square`` class.
+        """
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """String representation of the Square"""
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+        """string representation of instance.
+        """
+        return "[Square] ({}) {}/{} - {}".format(
+                self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
+        """public ``size`` property"""
         return self.width
 
     @size.setter
@@ -27,7 +29,8 @@ class Square(Rectangle):
         self.height = size
 
     def update(self, *args, **kwargs):
-        """update the argument placement"""
+        """Updates each attribute of the class
+        """
         if args is not None and len(args) != 0:
             if len(args) == 1:
                 self.id = args[0]
@@ -51,7 +54,7 @@ class Square(Rectangle):
                 for key in kwargs.keys():
                     if key == 'id':
                         self.id = kwargs[key]
-                    elif key == 'width':
+                    elif key == 'size':
                         self.size = kwargs[key]
                     elif key == 'x':
                         self.x = kwargs[key]
@@ -59,5 +62,7 @@ class Square(Rectangle):
                         self.y = kwargs[key]
 
     def to_dictionary(self):
-        """Dictonary representation of the class"""
-        return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
+        """returns the dictionary representation of the ``Square``
+        instance
+        """
+        return {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
