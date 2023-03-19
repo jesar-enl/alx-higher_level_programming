@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Add a new state to the database"""
 # Importing required modules/classes
 from sys import argv
 
