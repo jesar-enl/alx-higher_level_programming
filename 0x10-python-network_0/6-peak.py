@@ -3,6 +3,7 @@
 
 
 def find_peak(list_of_integers):
+    """define the peak in the list"""
     if len(list_of_integers) == 0:
         return
     if len(list_of_integers) == 1:
